@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fedf74d-8c8c-4ff2-b0fe-d6a05c54a0a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/model/ClienteModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/model/ItemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/model/PedidoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimerioPrograma.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/recebe_arquivo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/recebe_arquivo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/test/java/com/avanade/aplicacao/Programa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/Programa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/test/java/com/avanade/aplicacao/filtros/FiltrarArquivoVenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/filtros/FiltrarArquivoVenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/test/java/com/avanade/aplicacao/servicos/ServicoLerArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/servicos/ServicoLerArquivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/test/java/com/avanade/aplicacao/servicos/ServicoProcessarArquivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/servicos/ServicoProcessarArquivos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recebe_arquivo/src/test/java/com/avanade/aplicacao/validacoes/ValidarArquivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recebe_arquivo/src/main/java/com/avanade/aplicacao/validacoes/ValidarArquivos.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="211kJk6bEXY4WiZfcgeu141wDFg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recebe_arquivo" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fedf74d-8c8c-4ff2-b0fe-d6a05c54a0a6" name="Changes" comment="" />
+      <created>1637115910373</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637115910373</updated>
+    </task>
+    <servers />
+  </component>
+</project>
