@@ -10,8 +10,5 @@
         <module name="recebe_arquivo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="recebe_arquivo" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
