@@ -13,6 +13,7 @@ public class ItemModel {
     private Integer codigoProduto;
     private Integer nomeProduto;
     private BigDecimal valorUnitario;
+    private BigDecimal valor;
 
 
 

@@ -26,12 +26,12 @@ public class ServicoProcessarArquivos {
             return;
         }
 
-        ServicoLerArquivo servico = new ServicoLerArquivo();
+        ServicoLerArquivo servicoLerArquivo = new ServicoLerArquivo();
         lstArquivos.forEach((arquivo) -> {
             String caminhoArquivo = dirEntrada.toString() + File.separator + arquivo;
-            log.info("Processando arquivo: {} ", arquivo);
+            log.info("Processando arquivo: {} ", caminhoArquivo);
 
-            List<PedidoModel> pedido = servico.executar(caminhoArquivo);
+            List<PedidoModel> pedido = servicoLerArquivo.executar(caminhoArquivo);
             if (pedido.isEmpty()) {
                 log.info("Não há registro no arquivo {} ", caminhoArquivo);
                 return;

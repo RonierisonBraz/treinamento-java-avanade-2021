@@ -17,7 +17,6 @@ import java.util.Optional;
 @Slf4j
 public class ServicoLerArquivo {
 
-
     public List<PedidoModel> executar(String caminhoArquivo) {
         List<String> linhas;
         try {
@@ -26,7 +25,6 @@ public class ServicoLerArquivo {
 
             if (linhas.isEmpty()) {
                 return Collections.emptyList();
-
             }
 
         } catch (IOException ex) {
@@ -37,29 +35,27 @@ public class ServicoLerArquivo {
         return criarPedidos(linhas);
     }
 
-
     private List<PedidoModel> criarPedidos(List<String> linhas) {
 
         List<PedidoModel> pedidos = new ArrayList<>();
         PedidoModel pedidoCorrente = null;
 
         for (String linha : linhas) {
-            String[] campos = StringUtils.split(linha,";");
+            String[] campos = StringUtils.split(linha, ";");
             if (campos.length == 0) {
                 continue;
             }
             if (campos[0].equals("C")) {
                 Optional<PedidoModel> pedidoOpt = PedidoUtils.criarPedido(campos);
-                if (pedidoOpt.isEmpty()){
+                if (pedidoOpt.isEmpty()) {
                     continue;
                 }
                 pedidoCorrente = pedidoOpt.get();
                 pedidos.add(pedidoCorrente);
                 continue;
             }
+            //Todo Criar itens do pedido
         }
         return pedidos;
     }
-
-
 }

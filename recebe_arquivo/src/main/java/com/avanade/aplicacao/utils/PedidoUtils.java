@@ -2,13 +2,12 @@ package com.avanade.aplicacao.utils;
 
 import com.avanade.aplicacao.model.ClienteModel;
 import com.avanade.aplicacao.model.PedidoModel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Optional;
+
 @Slf4j
 public final class PedidoUtils {
 
@@ -22,15 +21,14 @@ public final class PedidoUtils {
     public PedidoUtils() {
     }
 
-
     public static Optional<PedidoModel> criarPedido(String... campos) {
 
-        if(campos.length != TAMANHO_CAMPOS_PEDIDO){
+        if (campos.length != TAMANHO_CAMPOS_PEDIDO) {
             return Optional.empty();
         }
 
-        try{
-            Idx idx =Idx.create();
+        try {
+            Idx idx = Idx.create();
             PedidoModel pedido = PedidoModel.builder()
                     .codigo(Integer.valueOf(campos[idx.inc()]))
                     .cliente(criarCliente(idx, campos).orElse(null))
@@ -39,33 +37,39 @@ public final class PedidoUtils {
                     .data(SDF.parse(campos[idx.inc()]))
                     .build();
             return Optional.of(pedido);
-        }catch (Exception ex){
-            log.error("Falha ao criar pedido [campos=>{}]",campos, ex);
+
+        } catch (Exception ex) {
+            log.error("Falha ao criar pedido [campos=>{}]", campos, ex);
             return Optional.empty();
         }
     }
-    public static Optional<ClienteModel> criarCliente(Idx idx, String...campos){
-        try{
+
+    public static Optional<ClienteModel> criarCliente(Idx idx, String... campos) {
+        try {
             ClienteModel cliente = ClienteModel.builder()
                     .codigo(Integer.valueOf(campos[idx.inc()]))
                     .nome(campos[idx.inc()])
                     .build();
             return Optional.of(cliente);
-        }catch (Exception ex){
-            return  Optional.empty();
+
+        } catch (Exception ex) {
+            log.error("Falha ao criar Cliente [campos=>{}]", campos, ex);
+            return Optional.empty();
         }
     }
 
-   static class  Idx {
+    static class Idx {
         private int idx;
-        public static Idx create(){
+
+        public static Idx create() {
             return new Idx();
         }
 
-        Idx(){
+        Idx() {
             idx = 1;
         }
-        public int inc(){
+
+        public int inc() {
             return idx++;
         }
     }
